@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Leog888/ReadMeGen/issues"
   },
-  "homepage": "https://github.com/Leog888/ReadMeGen#readme"
+  "homepage": "https://github.com/Leog888/ReadMeGen#readme",
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
 }

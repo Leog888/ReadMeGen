@@ -1,9 +1,5 @@
 const fs = require("fs"); 
 const inquirer = require ("inqirer");
-const util = require("util");
-const GenReadME = require("GenReadME");
-// When I input util there are options as node util and util/types what are the difference?
-
 
 inquirer
 .questions ([
@@ -65,8 +61,10 @@ inquirer
 },   
 ])
 
+// Grabs list of licenses from github
 function init() {
   generateMarkdown.getLicenses(licenses =>{
+    //   options...
     licenses.forEach(obj => questions[6].choices.push(obj.name));
     inquirer
       .prompt(questions)
